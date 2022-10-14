@@ -1,0 +1,23 @@
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .row{
+        width: 50%;
+    }
+}

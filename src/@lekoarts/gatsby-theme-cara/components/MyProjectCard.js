@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card} from "react-bootstrap";
-import './Project.css';
+import './MyProjectCard.css';
 
 //COLOR GRADIENTS
 //"linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
@@ -8,7 +8,7 @@ import './Project.css';
 //"linear-gradient(to right, #009245 0%, #FCEE21 100%)"
 // linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 
-const Project = ({title, description, href, bg}) => {
+const MyProjectCard = ({title, description, href, bg}) => {
     return (
         <Card className={'card'} style={{background: bg}} onClick={(e) => {
             e.preventDefault();
@@ -25,4 +25,4 @@ const Project = ({title, description, href, bg}) => {
     )
 }
 
-export default Project
+export default MyProjectCard
