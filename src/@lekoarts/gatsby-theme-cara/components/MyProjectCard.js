@@ -3,6 +3,7 @@ import {Card} from "react-bootstrap";
 import './MyProjectCard.css';
 
 //COLOR GRADIENTS
+
 //"linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
 //"linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
 //"linear-gradient(to right, #009245 0%, #FCEE21 100%)"

@@ -7,10 +7,9 @@ export default function Intro() {
         <div className="container">
             <h1>Hi, my name is Michael 👋</h1>
             <img className="profile-image" src={profileImage} alt='https://via.placeholder.com/525x200'/>
-            <p className="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend tempor neque, at iaculis
-                mi luctus a. Sed egestas sollicitudin purus et tempor. Morbi vulputate magna quis elit hendrerit
-                tristique. Suspendisse libero ex, ultrices et ex eget, interdum tempor urna. Maecenas blandit
-                massa neque, lobortis feugiat augue gravida vitae. </p>
+            <p className="intro-text">Welcome to my website. Here you will find some projects that I have created.
+                Ranging from frontend development, backend development, mobile development, machine learning, as various algorithm-based projects.
+                You can also find more information about my background as well as contact details and social media accounts below if you would like to reach out.</p>
         </div>
     )
 }
