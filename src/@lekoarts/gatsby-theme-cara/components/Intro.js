@@ -2,7 +2,7 @@ import React from 'react'
 import profileImage from '/static/profiler.jpg'
 import "./Intro.css"
 
-export default function Intro() {
+const Intro = () => {
     return (
         <div className="container">
             <h1>Hi, my name is Michael 👋</h1>
@@ -13,3 +13,5 @@ export default function Intro() {
         </div>
     )
 }
+
+export default Intro
