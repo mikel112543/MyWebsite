@@ -1,7 +1,6 @@
 .container{
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 h1{
@@ -15,14 +14,42 @@ p.intro-text{
 }
 
 .profile-image{
+    display: flex;
     height: 250px;
     width: 250px;
     border-radius: 50%;
 }
 
-@media (max-width: 768px) {
+/* Mobile Devices */
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    .container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .profile-image {
+        height: 220px;
+        width: 220px;
+        margin-top: 50px;
+        align-self: center;
+    }
+    p.intro-text {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 60px;
+    }
+}
+
+/* iPads & Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px)  {
     h1{
-        font-size: 40px;
+        font-size: 60px;
     }
     .profile-image{
         height: 150px;
@@ -31,5 +58,19 @@ p.intro-text{
     p.intro-text{
         font-size: 15px;
     }
+}
 
+/* Small Screens & Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 65px;
+    }
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    p.intro-text {
+        padding-top: 20px;
+        font-size: 20px;
+    }
 }

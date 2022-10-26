@@ -8,13 +8,13 @@ import './MyProjectCard.css';
 //"linear-gradient(to right, #009245 0%, #FCEE21 100%)"
 // linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 
-const MyProjectCard = ({title, description, href, bg}) => {
+const MyProjectCard = ({title, description, href, bg, img}) => {
     return (
         <Card className={'card'} style={{background: bg}} onClick={(e) => {
             e.preventDefault();
             window.open(href, '_blank', 'noopener,noreferrer')
         }}>
-            <Card.Img className={"card-image"} variant="top" src="https://via.placeholder.com/525x200"/>
+            <Card.Img className={"card-image"} variant="top" src={img}/>
             <Card.Body>
                 <Card.Title className={"card-title"}>{title}</Card.Title>
                 <Card.Text className={"card-text"}>

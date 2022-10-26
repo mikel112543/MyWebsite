@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%
+}
+
+h2.title {
+    font-size: 80px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: Bahnschrift, serif;
+}
+
+.contact-group {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+p.email-txt{
+    font-weight: bold;
+    font-family: Bahnschrift, serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+p.email {
+    font-size: 35px;
+    font-family: Bahnschrift, serif;
+    margin: 0 0 0 10px;
+}
+
+p.contact-txt{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Bahnschrift, serif;
+    margin: 0;
+}
+
+p.number {
+    font-size: 35px;
+    font-family: Bahnschrift, serif;
+    margin: 0 0 0 10px;
+}
+
+.linkedIn, .github{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.github{
+    margin-left: 10px;
+}
+
+.linkedIn:hover, .github:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* Mobile Devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    h2.title{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .item{
+        text-align: center;
+        align-items: center;
+    }
+
+    p.email-txt, p.email, p.contact-txt, p.number{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .contact-group{
+        margin-bottom: 10px;
+    }
+}
+
+/* iPads & Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    h2.title {
+        font-size: 60px;
+    }
+
+    p.email-txt, p.email, p.contact-txt, p.number{
+        font-size: 25px;
+    }
+
+    .contact-group{
+        margin-bottom: 15px;
+    }
+}
+
+/* Small Screens & Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h2.title {
+        font-size: 65px;
+    }
+
+    p.email-txt, p.email, p.contact-txt, p.number{
+        font-size: 30px;
+    }
+
+    .contact-group{
+        margin-bottom: 15px;
+    }
+}
