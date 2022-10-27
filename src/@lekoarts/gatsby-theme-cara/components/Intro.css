@@ -9,9 +9,10 @@ h1{
     font-family: Bahnschrift, serif;
 }
 
-p.intro-text{
+.item p.intro{
     font-size: 25px;
     font-family: Bahnschrift, serif;
+    margin-top: 50px;
     font-weight: lighter;
 }
 
@@ -41,7 +42,7 @@ p.intro-text{
         margin-top: 50px;
         align-self: center;
     }
-    p.intro-text {
+    .item p.intro {
         font-size: 15px;
         text-align: center;
         margin-top: 60px;
@@ -57,7 +58,7 @@ p.intro-text{
         height: 150px;
         width: 150px;
     }
-    p.intro-text{
+    .item p.intro{
         font-size: 15px;
     }
 }
@@ -71,7 +72,7 @@ p.intro-text{
         width: 200px;
         height: 200px;
     }
-    p.intro-text {
+    .item p.intro {
         padding-top: 20px;
         font-size: 20px;
     }
